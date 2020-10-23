@@ -39,7 +39,7 @@ namespace FunctionalTests.stepDefinitions
         }
         
         [Then(@"I see all the items that belong to that order with the fields : ""(.*)""")]
-        public void ThenISeeAllTheItemsThatBelongToThatOrderWithTheFieldsMFGIDREFIDProdDescriptionCreationDateGuaranteeShipDateAndStatus()
+        public void ThenISeeAllTheItemsThatBelongToThatInvoice()
         {
             var resultTable = _driver.FindElement(By.Id("gridSearchOrder"));
             Assert.True(resultTable.Enabled);
